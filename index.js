@@ -16,7 +16,7 @@ app.use(morgan('common'));
 
 
 //CONNECT TO DATABASE
-console.log('url', process.env.MONGODB_URL);
+// console.log('url', process.env.MONGODB_URL);
 mongoose.connect(process.env.MONGODB_URL)
 
 app.get('/check', (req, res) => {
